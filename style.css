@@ -1,0 +1,256 @@
+body { 
+    background-color: rgb(32, 30, 30);
+    font-family: Arial, sans-serif;
+    color: rgb(52, 52, 80);
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav {
+    font-size: 23px;
+    word-spacing: 55px;
+    font-weight: bold;
+    margin-top: 30px;
+}
+ 
+span {
+    font-weight: bold;
+    font-family: cursive    
+}
+
+section {
+    width: 50%;
+    margin: 2cm auto;
+    border: solid 12px rgb(50, 50, 46);
+    padding: 0.5cm;
+    border-radius: 18px;
+    box-shadow: 7px 7px 7px rgba(110, 101, 101, 0.563);
+    background-color: rgb(199, 189, 189);
+    transition: 0.3s ease;
+}
+
+section:hover {
+    background-color: #ffffff;
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 8px 15px rgba(255, 0, 0, 0.374); 
+}
+
+.woordenbox {
+    display: inline-block;
+    padding: 0.1cm;
+    background-color: black;
+    border-radius: 6px;
+    box-shadow: 3px 3px 3px rgba(33, 33, 85, 0.697);
+    text-decoration: none;
+    color: rgb(75, 75, 238);
+    transition: 0.3s ease;
+}
+
+.woordenbox:hover {
+    background-color: #ffffff;
+    transform: translateY(-4px) scale(1.05);
+    box-shadow: 0 8px 15px rgba(255, 0, 0, 0.374); 
+}
+
+.h1 {
+    text-align: center;
+}
+
+.p1 {
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    font-family: cursive;
+}
+
+.ptekst {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.foto1 {
+    margin-top: 2.7cm;
+    margin-right: 3cm;
+    border-radius: 10px;
+    border: solid 5px rgba(255, 0, 0, 0.664);
+}
+
+.foto2 {
+    margin-left: 5cm;
+    border: solid 5px black;
+    border-radius: 10px;
+    
+}
+
+.tekstrechts {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    margin: 40px auto;
+
+}
+
+.opleiding {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin: 40px 0;
+}
+
+.project-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 60px;
+    width: 35%;
+    margin: 40px auto;
+}
+
+.project-ruimte {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: -1.5cm;
+    
+}
+
+.margin {
+    margin: -1cm auto;
+}
+
+.social-icon {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 55px; 
+}
+
+.linkedin {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 55px;
+    
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 26px;
+    margin-top: 2cm;
+}
+
+.contacttekst {
+    text-align: center;
+    margin-top: 1.9cm;
+    color: rgb(241, 241, 241);
+}
+
+#cookie-banner {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    max-width: 500px;
+    background: #1e1e1e;
+    color: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.3);
+    display: none; /* verstopt standaard */
+    animation: fadeIn 0.3s ease-in-out;
+    z-index: 99999;
+}
+
+.cookie-content p {
+    margin: 0 0 15px;
+    font-size: 15px;
+}
+
+.cookie-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+#cookie-banner button {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.2s;
+}
+
+#accept-btn {
+    background: #4caf50;
+    color: white;
+}
+
+#accept-btn:hover {
+    background: #43a047;
+}
+
+.decline {
+    background: #d32f2f;
+    color: white;
+}
+
+.decline:hover {
+    background: #c62828;
+}
+
+/* Animatie */
+@keyframes fadeIn {
+    from {opacity: 0; transform: translate(-50%, 10px);}
+    to {opacity: 1; transform: translate(-50%, 0);}
+}
+
+/* ============= */
+/*  KLEURTHEMA   */
+/* ============= */
+
+:root {
+  --bg: #000000;
+  --text: #000000;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  transition: background .25s ease, color .25s ease;
+}
+
+/* Licht thema zodra JS 'light' toevoegt */
+body.light {
+  --bg: #ffffff;
+  --text: #000000;
+}
+
+/* ================= */
+/*  TOGGLE BUTTON    */
+/* ================= */
+
+#bwToggle {
+  position: fixed;
+  right: 36px;
+  top: 36px;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background: #333;
+  color: #fff;
+  font-size: 14px;
+  transition: .2s;
+}
+
+body.light #bwToggle {
+  background: #ddd;
+  color: #000;
+}
