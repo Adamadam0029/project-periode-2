@@ -5,15 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
+    <h2 id="textkleurgrijs">Countdown tot mijn verjaardag 🎉</h2>
+    <p id="countdown"></p>
     <header>
-        <nav>
+        <nav class="navbeneden">
             <a class="woordenbox" href="index.html">Home</a>
             <a class="woordenbox" href="Portfolio.html">Portfolio</a>
             <a class="woordenbox" href="about me.html">About</a> 
             <a class="woordenbox" href="future.html">Future</a>
             <a class="woordenbox" href="contact.html">Contact</a>
+            <button id="bwToggle">Wit</button>
         </nav>
     </header>
     <section class="section">
@@ -34,6 +38,15 @@
             </p>
         </div>
         </section> 
-        
+        <div id="cookie-banner">
+    <div class="cookie-content">
+        <p>Wij gebruiken cookies om je ervaring te verbeteren. Akkoord?</p>
+        <div class="cookie-buttons">
+            <button id="accept-btn">Accepteren</button>
+            <button id="decline-btn" class="decline">Weigeren</button>
+        </div>
+    </div>
+</div>
+
 </body>
 </html>

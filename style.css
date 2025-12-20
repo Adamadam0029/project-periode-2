@@ -16,7 +16,11 @@ nav {
     font-weight: bold;
     margin-top: 30px;
 }
- 
+
+.navbeneden{
+    margin-top: 100px;
+} 
+
 span {
     font-weight: bold;
     font-family: cursive    
@@ -253,4 +257,26 @@ body.light {
 body.light #bwToggle {
   background: #ddd;
   color: #000;
+}
+
+#textkleurgrijs {
+    color: gray;
+    position: fixed;
+    top: 20px;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#countdown {
+  color: red;
+  font-size: 20px;
+  font-weight: bold;
+
+  position: fixed;
+  top: 56px;        
+  left: 49%;
+  transform: translateX(-50%);
+
+  text-align: center;
 }
